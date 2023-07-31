@@ -1138,6 +1138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 7822804922272613159}
   isLeftButton: 1
+  isAttackButton: 0
 --- !u!114 &720825319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2295,6 +2296,7 @@ GameObject:
   - component: {fileID: 1342355718}
   - component: {fileID: 1342355717}
   - component: {fileID: 1342355716}
+  - component: {fileID: 1342355719}
   m_Layer: 5
   m_Name: RightAttackButton
   m_TagString: Untagged
@@ -2366,19 +2368,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1342355717}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2013801295}
-        m_TargetAssemblyTypeName: LaserShooter, Assembly-CSharp
-        m_MethodName: Shoot
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1342355717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2417,6 +2407,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342355714}
   m_CullTransparentMesh: 1
+--- !u!114 &1342355719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342355714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b48d4b237f075448a45ff30d46a876b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserShooter: {fileID: 2013801295}
 --- !u!1 &1367218689
 GameObject:
   m_ObjectHideFlags: 0
@@ -2429,6 +2432,7 @@ GameObject:
   - component: {fileID: 1367218693}
   - component: {fileID: 1367218692}
   - component: {fileID: 1367218691}
+  - component: {fileID: 1367218694}
   m_Layer: 5
   m_Name: LeftAttackButton
   m_TagString: Untagged
@@ -2500,19 +2504,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1367218692}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2013801295}
-        m_TargetAssemblyTypeName: LaserShooter, Assembly-CSharp
-        m_MethodName: Shoot
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1367218692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2551,6 +2543,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367218689}
   m_CullTransparentMesh: 1
+--- !u!114 &1367218694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367218689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b48d4b237f075448a45ff30d46a876b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserShooter: {fileID: 2013801295}
 --- !u!1 &1397929413
 GameObject:
   m_ObjectHideFlags: 0
@@ -2950,6 +2955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 7822804922272613159}
   isLeftButton: 0
+  isAttackButton: 0
 --- !u!114 &1592806213
 MonoBehaviour:
   m_ObjectHideFlags: 0

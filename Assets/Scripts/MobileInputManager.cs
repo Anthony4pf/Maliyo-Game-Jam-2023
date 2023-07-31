@@ -5,7 +5,7 @@ public class MobileInputManager : MonoBehaviour, IPointerDownHandler, IPointerUp
 {
     public PlayerController playerController;
     public bool isLeftButton;
-    
+    public bool isAttackButton;
     public void OnPointerDown(PointerEventData eventData)
     {
         if (isLeftButton)
