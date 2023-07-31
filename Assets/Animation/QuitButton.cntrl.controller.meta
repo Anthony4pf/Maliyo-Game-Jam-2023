@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/Animation/QuitButton.cntrl.controller.meta
 guid: 0f972f650520f1942a2822745ef26815
 NativeFormatImporter:
+========
+guid: 0a11fcdc511c6724095926c167391bd6
+folderAsset: yes
+DefaultImporter:
+>>>>>>>> Stashed changes:Assets/Course Library/_Source_Files.meta
   externalObjects: {}
   mainObjectFileID: 9100000
   userData: 

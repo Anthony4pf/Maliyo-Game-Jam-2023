@@ -10,6 +10,7 @@ public class LaserShooter : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 20f;
     public ParticleSystem muzzleFlash;
+    private bool isAttacking = false;
 
     private void Start()
     {
@@ -19,6 +20,11 @@ public class LaserShooter : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Shoot();
+        }
+
+        if (isAttacking)
         {
             Shoot();
         }
@@ -90,5 +96,15 @@ public class LaserShooter : MonoBehaviour
         }
 
         Destroy(bullet);
+    }
+
+    public void OnStartAtack()
+    {
+        isAttacking = true;
+    }
+
+    public void OnStopAttack()
+    {
+        isAttacking = false;
     }
 }
